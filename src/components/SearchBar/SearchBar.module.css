@@ -1,0 +1,26 @@
+.header {
+  padding: 20px;
+  background-color: #f8f6e3;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.input {
+  padding: 5px 10px 5px 30px;
+  outline: transparent;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.btn {
+  font-size: 12px;
+  height: 30px;
+}
