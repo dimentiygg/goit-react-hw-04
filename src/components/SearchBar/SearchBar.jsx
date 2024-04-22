@@ -5,11 +5,12 @@ export default function SearchBar({ onSubmit }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    onSubmit(form.elements.search.value);
     if (form.elements.search.value.trim() === "") {
       toast.error("Field is empty ");
+    } else {
+      onSubmit(form.elements.search.value);
+      form.reset();
     }
-    form.reset();
   };
 
   return (
